@@ -1,12 +1,13 @@
 {
   "id": "775913ab-07dd-4c70-bf43-0419381f85b0",
   "version": "2.0",
-  "name": "Automated_Latest_GO_Downloader",
+  "name": "Latest_GO_Downloader",
   "url": "https://www.aputf.org",
   "tests": [{
     "id": "02b9de14-34ba-48cb-a5d2-9a5baf77cb85",
     "name": "TestRun",
-    "commands": [{
+    "commands": [
+    {
       "id": "f85e1883-8368-4c4e-9bb0-d6922435ac56",
       "comment": "opening the website",
       "command": "open",
@@ -23,7 +24,8 @@
         ["css=#menu-item-1400 > .sf-with-ul", "css:finder"] 
       ],
       "value": ""
-    }, {
+    }, 
+    {
       "id": "d514d2f6-6134-447a-92d3-3bd6c30a5f01",
       "comment": "Click the 'Latest GO's' submenu link using css selector", 
       "command": "click",
@@ -32,7 +34,8 @@
         ["css=#menu-item-4124 > a", "css:finder"] 
       ],
       "value": ""
-    }, {
+    }, 
+    {
       "id": "37a36808-f942-4e81-b616-a2a7be39f441",
       "comment": "Download the first PDF (Latest posted on the top of table) using css selector",
       "command": "click",
@@ -44,39 +47,7 @@
       "opensWindow": true,
       "windowHandleName": "win2459",
       "windowTimeout": 2000
-     },
-    {
-      "id": "431da369-3cfb-45fa-abf9-9ca7ff526915",
-      "comment": "",
-      "command": "storeWindowHandle",
-      "target": "root",
-      "targets": [],
-      "value": ""
-    }, 
-    {
-      "id": "88058815-26f5-4471-8d4c-7ca7f87eebc3",
-      "comment": "",
-      "command": "selectWindow",
-      "target": "handle=${win2459}",
-      "targets": [],
-      "value": ""
-    }, 
-    {
-      "id": "5af5bf95-6a26-4a87-a39b-bee2cd2c1618",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, 
-    {
-      "id": "f4ab32ea-cf5d-4860-bf10-94a3ea628274",
-      "comment": "",
-      "command": "selectWindow",
-      "target": "handle=${root}",
-      "targets": [],
-      "value": ""
-    }]
+     }]
   }],
   "suites": [{
     "id": "d6102b67-b465-4be2-aad5-6113d6a0056a",
