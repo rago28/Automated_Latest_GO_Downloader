@@ -1,0 +1,2 @@
+# Automated_Latest_GO_Downloader-AndhraPradesh-Teachers-Union
+This is a selenium automation script which downloads the latest avaialable GO published in the AndhraPradesh Teacher's union website. Anyone can customise the script by replacing the base URL and the CSS selectors according to their own need. FYI this is not a hard coded script but a test code got after recording the automation usig selenium IDE.
